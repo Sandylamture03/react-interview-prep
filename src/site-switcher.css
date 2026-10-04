@@ -1,0 +1,73 @@
+/* Shared navigation for the two study guides in the single application. */
+.site-switcher {
+  display: grid;
+  gap: 4px;
+}
+
+.site-switcher-label {
+  margin: 0 11px 5px;
+  color: var(--quiet, #687990);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.site-switcher-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.68rem;
+  text-align: left;
+  transition: 160ms ease;
+}
+
+.site-switcher-button span {
+  min-width: 38px;
+  color: var(--quiet, #687990);
+  font-size: 0.57rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.site-switcher-button:hover {
+  background: rgba(140, 182, 255, 0.07);
+  color: var(--text, #f1f5fb);
+}
+
+.sidebar .site-switcher-button.active {
+  border-color: rgba(100, 224, 194, 0.18);
+  background: rgba(100, 224, 194, 0.11);
+  color: var(--teal);
+}
+
+.sidebar .site-switcher-button.active span {
+  color: var(--teal);
+}
+
+.sidebar-rule.compact,
+.rail-divider.compact {
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
+.ladder-app .site-switcher-button:hover {
+  background: rgba(255, 253, 248, 0.72);
+  color: var(--ink);
+}
+
+.ladder-app .site-switcher-button.active {
+  border-color: rgba(40, 122, 108, 0.18);
+  background: rgba(128, 205, 185, 0.17);
+  color: var(--ink);
+}
+
+.ladder-app .site-switcher-button.active span {
+  color: var(--mint-deep);
+}

@@ -1,0 +1,130 @@
+.question-bank-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.bank-source-note {
+  flex: 0 0 auto;
+  color: var(--quiet);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+}
+
+.question-bank-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.bank-card {
+  min-width: 0;
+  padding: 19px 20px 17px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(16, 27, 45, 0.72);
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.bank-card:hover {
+  border-color: var(--line-strong);
+  background: rgba(20, 34, 56, 0.9);
+  transform: translateY(-1px);
+}
+
+.bank-card.expanded {
+  border-left: 3px solid var(--amber);
+}
+
+.bank-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+
+.bank-category,
+.bank-origin {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.57rem;
+  font-weight: 800;
+}
+
+.bank-category.theory { color: var(--teal); }
+.bank-category.practical { color: var(--blue); }
+.bank-category.coding { color: var(--amber); }
+.bank-origin { color: var(--quiet); }
+
+.bank-card h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.42;
+  letter-spacing: -0.015em;
+}
+
+.bank-answer {
+  margin-top: 16px;
+  padding: 13px 14px 14px;
+  border-left: 2px solid rgba(100, 224, 194, 0.55);
+  background: rgba(9, 17, 31, 0.52);
+}
+
+.bank-answer-label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--teal);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.bank-answer p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.73rem;
+  line-height: 1.62;
+}
+
+.bank-card details {
+  margin-top: 17px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.66rem;
+  line-height: 1.5;
+}
+
+.bank-card summary {
+  color: var(--quiet);
+  cursor: pointer;
+  font-size: 0.61rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bank-card details ul {
+  margin: 9px 0 0;
+  padding-left: 17px;
+}
+
+.bank-card details li + li {
+  margin-top: 5px;
+}
+
+@media (max-width: 780px) {
+  .question-bank-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .question-bank-grid {
+    grid-template-columns: 1fr;
+  }
+}
