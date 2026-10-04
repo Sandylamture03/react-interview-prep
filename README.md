@@ -1,6 +1,6 @@
 # React 80/20 Interview Prep
 
-A single-page React interview study guide built from a React 80/20 learning roadmap: the small set of skills that covers most day-to-day React work.
+A single-page React interview study guide based on an 8-week React 80/20 learning roadmap: the small set of skills that covers most day-to-day React work.
 
 **Live site:** https://sandylamture03.github.io/react-interview-prep/
 

@@ -22,10 +22,10 @@ CONTENT_FILES = [
 ]
 PACKAGES = [
     {"key": "core", "label": "80/20 Core",
-     "note": "Only the 17 skills and the skip list from your React 80/20 Roadmap."},
+     "note": "The 17 skills and the skip list from the React 80/20 roadmap, and nothing else."},
     {"key": "beyond", "label": "Beyond 80/20",
-     "note": "Kept separate from your roadmap package. Roadmap gaps add coding and technical practice "
-             "for skills that had none; Beyond the roadmap covers common interview topics the roadmap skips."},
+     "note": "Kept separate from 80/20 Core. Roadmap gaps add coding and technical practice "
+             "for skills that had none; Beyond the roadmap covers common interview topics the roadmap leaves out."},
 ]
 SECTIONS = {
     "theory": {"label": "Theory Q&A", "short": "Theory", "prefix": "Q", "pkg": "core"},
